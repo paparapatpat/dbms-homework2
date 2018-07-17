@@ -22,11 +22,11 @@ app.set('view engine' , 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('Homework2'));
+	app.use(express.static('public'));
 }
 
 app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'Homework2', 'member'));
+	response.sendFile(path.join(__dirname, 'public'));
 });
 
 
