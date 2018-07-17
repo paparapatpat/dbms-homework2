@@ -21,18 +21,10 @@ app.engine('handlebars', exphbs({defaultLayout: 'member'}));
 app.set('view engine' , 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
-//if (process.env.NODE_ENV === 'production') {
-//	app.use(express.static('public'));
-//}
-
-//app.get('*', (request, response) => {
-//	response.sendFile(path.join(__dirname, 'public'));
-//});
-
 app.get('/', function(req, res){
 
 	res.render('member', {
-		name: 'Member Profile',
+		name: 'homework No. 2',
 		imageurl: '/img.jpg',
 	})
 });
