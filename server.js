@@ -29,7 +29,13 @@ app.get('*', (request, response) => {
 	response.sendFile(path.join(__dirname, 'public'));
 });
 
+app.get('/', function(req, res){
 
+	res.render('member', {
+		name: 'Member Profile',
+		imageurl: '/img.jpg',
+	})
+});
 
 app.get('/member/1', function(req, res){
 
