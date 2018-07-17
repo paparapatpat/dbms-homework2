@@ -12,15 +12,6 @@ var exphbs = require('express-handlebars');
 // 	port: 5432
 // });
 
-//const aws = require('aws-sdk');
-
-///let s3 = new aws.S3({
-  //accessKeyId: process.env.S3_KEY,
-  ///secretAccessKey: process.env.S3_SECRET
-//});
-
-//if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
-
 const app = express();
 
 // tell express which folder is a static/public folder
