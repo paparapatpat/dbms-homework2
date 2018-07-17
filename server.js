@@ -11,28 +11,23 @@ var exphbs = require('express-handlebars');
 // 	host: 'localhost',
 // 	port: 5432
 // });
-const aws = require('aws-sdk');
 
-let s3 = new aws.S3({
-  accessKeyId: process.env.S3_KEY,
-  secretAccessKey: process.env.S3_SECRET
-});
+//const aws = require('aws-sdk');
 
-if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
+///let s3 = new aws.S3({
+  //accessKeyId: process.env.S3_KEY,
+  ///secretAccessKey: process.env.S3_SECRET
+//});
+
+//if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
 
 const app = express();
 
 // tell express which folder is a static/public folder
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({defaultLayout: 'member'}));
-// app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine' , 'handlebars');
-
 app.use(express.static(path.join(__dirname, 'public')));
-
-//setup handlebars
-// app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-
 
 
 app.get('/member/1', function(req, res){
