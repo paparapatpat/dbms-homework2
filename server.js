@@ -27,8 +27,8 @@ app.get('/member/1', function(req, res){
 		name: 'Jose Alfonso Marquez',
 		email: 'marquez.josealfonso@gmail.com',
 		phone: '09550464578',
-		imageurl: '/img.jpg',
-		hobbies: ['VB', 'playing']
+		imageurl: '/marquez.jpg',
+		hobbies: ['Playing Volleyball &', 'Mobile Games']
 	})
 });
 
@@ -38,8 +38,8 @@ app.get('/member/2', function(req, res){
 		name: 'Patricia Navarro',
 		email: 'patgnavarro@gmail.com',
 		phone: '09173591423',
-		imageurl: '/img.jpg',
-		hobbies: ['singing', 'playing']
+		imageurl: '/navarro.jpg',
+		hobbies: ['Singing &', 'Playing Musical Instruments']
 	})
 
 });
