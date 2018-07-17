@@ -60,6 +60,6 @@ app.get('/member/2', function(req, res){
 
 
 
-app.listen(process.env.PORT || 4000, function() {
-	console.log('Server started at port 4000');
+app.listen(process.env.PORT || 8081, function() {
+	console.log('Server started at port 8081');
 });
