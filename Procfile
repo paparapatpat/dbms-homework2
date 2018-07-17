@@ -1,3 +1,3 @@
 // Procfile
-
-worker: node server.js
+web: node server.js
+//worker: node server.js
