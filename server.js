@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res){
 
 	res.render('member', {
-		name: 'homework No. 2',
+		name: 'Homework No. 2',
 		imageurl: '/img.jpg',
 	})
 });
