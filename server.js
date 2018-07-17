@@ -18,6 +18,8 @@ let s3 = new aws.S3({
   secretAccessKey: process.env.S3_SECRET
 });
 
+if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
+
 const app = express();
 
 // tell express which folder is a static/public folder
