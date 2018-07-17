@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 var exphbs = require('express-handlebars');
-const PORT = process.env.PORT || 4000
+
 // const { Client } = require('pg');
 
 // //instantiate client using your db config
@@ -47,4 +47,6 @@ app.get('/member/2', function(req, res){
 
 
 
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+app.listen(process.env.PORT || 4000, function() {
+	console.log('Server started at port 4000');
+});
