@@ -1,23 +1,31 @@
 {
-  "name": "homework2",
+  "name": "module-1",
   "version": "1.0.0",
-  "description": "homework",
+  "description": "",
   "main": "server.js",
   "dependencies": {
     "aws-sdk": "^2.275.1",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0"
   },
-  "engines": {
-    "node": "10.6.0"
-  },
-  "devDependencies": {
-    "dotenv": "^6.0.0"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paparapatpat/dbms1819-ecommerce-t10.git"
+  },
+  "keywords": [
+    "module",
+    "ecommerce"
+  ],
   "author": "navarro marquez",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paparapatpat/dbms1819-ecommerce-t10/issues"
+  },
+  "homepage": "https://github.com/paparapatpat/dbms1819-ecommerce-t10#readme"
 }
